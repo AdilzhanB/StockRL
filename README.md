@@ -31,7 +31,7 @@ This model represents a sophisticated **reinforcement learning trading agent** t
 ```bash
 pip install stable-baselines3 yfinance pandas numpy scikit-learn
 ```
-
+### For data preparation, you can use Enhanced Enviroment and Stock data processor automated classes for data and enviroment preparation
 ### Load and Use the Model
 
 ```python
