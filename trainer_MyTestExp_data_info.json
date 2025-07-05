@@ -1,0 +1,97 @@
+{
+  "num_stocks": 5,
+  "stocks": [
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "TSLA",
+    "AAPL"
+  ],
+  "total_data_points": 5887,
+  "feature_dimensions": {
+    "AMZN": {
+      "sequences": 1147,
+      "timesteps": 60,
+      "features": 50
+    },
+    "MSFT": {
+      "sequences": 1185,
+      "timesteps": 60,
+      "features": 50
+    },
+    "GOOGL": {
+      "sequences": 1185,
+      "timesteps": 60,
+      "features": 50
+    },
+    "TSLA": {
+      "sequences": 1185,
+      "timesteps": 60,
+      "features": 50
+    },
+    "AAPL": {
+      "sequences": 1185,
+      "timesteps": 60,
+      "features": 50
+    }
+  },
+  "date_ranges": {
+    "AMZN": {
+      "start": "2020-12-08 00:00:00-05:00",
+      "end": "2025-07-03 00:00:00-04:00",
+      "total_days": 1147
+    },
+    "MSFT": {
+      "start": "2020-10-14 00:00:00-04:00",
+      "end": "2025-07-03 00:00:00-04:00",
+      "total_days": 1185
+    },
+    "GOOGL": {
+      "start": "2020-10-14 00:00:00-04:00",
+      "end": "2025-07-03 00:00:00-04:00",
+      "total_days": 1185
+    },
+    "TSLA": {
+      "start": "2020-10-14 00:00:00-04:00",
+      "end": "2025-07-03 00:00:00-04:00",
+      "total_days": 1185
+    },
+    "AAPL": {
+      "start": "2020-10-14 00:00:00-04:00",
+      "end": "2025-07-03 00:00:00-04:00",
+      "total_days": 1185
+    }
+  },
+  "data_statistics": {
+    "AMZN": {
+      "mean_reward": 0.0005594119760782921,
+      "std_reward": 0.022296406035272005,
+      "min_reward": -0.140494377749234,
+      "max_reward": 0.13535901735711864
+    },
+    "MSFT": {
+      "mean_reward": 0.0008731624810708478,
+      "std_reward": 0.016632783789797784,
+      "min_reward": -0.0771562052939444,
+      "max_reward": 0.10133680183689964
+    },
+    "GOOGL": {
+      "mean_reward": 0.0009044145449009408,
+      "std_reward": 0.019663019787478423,
+      "min_reward": -0.0950939635085033,
+      "max_reward": 0.1022436334871546
+    },
+    "TSLA": {
+      "mean_reward": 0.0013615600221650649,
+      "std_reward": 0.03903042109805533,
+      "min_reward": -0.1542620682219512,
+      "max_reward": 0.22689989839624536
+    },
+    "AAPL": {
+      "mean_reward": 0.0006670026996126003,
+      "std_reward": 0.018039907632620762,
+      "min_reward": -0.09245607865732186,
+      "max_reward": 0.15328847287251235
+    }
+  }
+}

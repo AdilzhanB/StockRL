@@ -1,0 +1,55 @@
+2025-07-04 17:13:41,696 - trainer_MyTestExp - INFO - info:66 - 📄 Loading config from experiments/MyTestExp/config.json
+2025-07-04 17:13:41,697 - trainer_MyTestExp - INFO - info:66 - ✅ Custom configuration loaded and merged
+2025-07-04 17:13:41,697 - trainer_MyTestExp - INFO - info:66 - 🔧 Configuration: {
+  "data": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "TSLA"
+    ],
+    "period": "5y",
+    "interval": "1d",
+    "use_sp500": false
+  },
+  "environment": {
+    "initial_balance": 10000,
+    "transaction_cost": 0.001,
+    "max_position_size": 1.0,
+    "lookback_window": 60,
+    "reward_type": "return"
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "eval_freq": 1000,
+    "n_eval_episodes": 5,
+    "save_freq": 10000,
+    "seed": 42
+  }
+}
+2025-07-04 17:13:41,699 - trainer_MyTestExp - INFO - info:66 - 💾 Configuration saved to experiments/MyTestExp/config.json
+2025-07-04 17:13:41,699 - trainer_MyTestExp - INFO - info:66 - 🎯 Trainer initialized for experiment: MyTestExp
+2025-07-04 17:13:41,700 - trainer_MyTestExp - INFO - info:66 - 📁 Experiment directory: experiments/MyTestExp
+2025-07-04 17:13:41,895 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Environment Creation...
+2025-07-04 17:13:41,895 - trainer_MyTestExp - INFO - info:66 - 🏪 Environment configuration:
+2025-07-04 17:13:41,896 - trainer_MyTestExp - INFO - info:66 -   initial_balance: 10000
+2025-07-04 17:13:41,897 - trainer_MyTestExp - INFO - info:66 -   transaction_cost: 0.001
+2025-07-04 17:13:41,898 - trainer_MyTestExp - INFO - info:66 -   max_position_size: 1.0
+2025-07-04 17:13:41,899 - trainer_MyTestExp - INFO - info:66 -   lookback_window: 60
+2025-07-04 17:13:41,899 - trainer_MyTestExp - INFO - info:66 -   reward_type: return
+2025-07-04 17:13:41,900 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)
+2025-07-04 17:13:41,903 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████░░░░░░░░░░░░░░░░░░| 40.0% (2/5)
+2025-07-04 17:13:41,905 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████░░░░░░░░░░░░| 60.0% (3/5)
+2025-07-04 17:13:41,907 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████████████████░░░░░░| 80.0% (4/5)
+2025-07-04 17:13:41,910 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████████████████| 100.0% (5/5)
+2025-07-04 17:13:41,912 - trainer_MyTestExp - INFO - info:66 - ✅ Created environments for 5 stocks
+2025-07-04 17:13:41,912 - trainer_MyTestExp - INFO - info:66 - ⏱️  Environment Creation completed in 0:00:00.017660
+2025-07-04 17:13:41,914 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Evaluation...
+2025-07-04 17:13:41,914 - trainer_MyTestExp - INFO - info:66 - Loading model from experiments/MyTestExp/models/final_model.zip
+2025-07-04 17:13:41,959 - trainer_MyTestExp - INFO - info:66 - Evaluating AMZN: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)

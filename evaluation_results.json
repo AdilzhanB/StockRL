@@ -1,0 +1,162 @@
+{
+  "AMZN": {
+    "episode_reward": 11.109435579052564,
+    "metrics": {
+      "total_return": 1.6287093677877313,
+      "sharpe_ratio": 0.739193551106399,
+      "max_drawdown": 1.8710927727176354,
+      "win_rate": 0.06719022687609075,
+      "total_trades": 7,
+      "profitable_trades": 0,
+      "average_trade_return": 0.009694097363920216,
+      "volatility": 15.02912946470428,
+      "calmar_ratio": 5.937404997250279,
+      "sortino_ratio": 1.0550018027748367
+    },
+    "info": {
+      "total_return": 1.6287093677877313,
+      "sharpe_ratio": 0.739193551106399,
+      "sortino_ratio": 1.0550018027748367,
+      "calmar_ratio": 5.937404997250279,
+      "max_drawdown": 1.8710927727176354,
+      "volatility": 15.02912946470428,
+      "win_rate": 0.06719022687609075,
+      "total_trades": 7,
+      "buy_trades": 7,
+      "sell_trades": 0,
+      "final_balance": 0.01300779811849638,
+      "final_shares": 124195,
+      "final_net_worth": 26287.093677877314,
+      "total_transaction_costs": 9.989996995206672,
+      "average_reward": 0.009694097363920216
+    }
+  },
+  "MSFT": {
+    "episode_reward": 11.95399569538335,
+    "metrics": {
+      "total_return": 72.43443310657092,
+      "sharpe_ratio": 0.5599795982107786,
+      "max_drawdown": 1.6460016109351812,
+      "win_rate": 0.5211148648648649,
+      "total_trades": 14,
+      "profitable_trades": 7,
+      "average_trade_return": 0.01009628014812781,
+      "volatility": 0.5161636705400652,
+      "calmar_ratio": 0.17560196959698396,
+      "sortino_ratio": 0.8424128513579742
+    },
+    "info": {
+      "total_return": 72.43443310657092,
+      "sharpe_ratio": 0.5599795982107786,
+      "sortino_ratio": 0.8424128513579742,
+      "calmar_ratio": 0.17560196959698396,
+      "max_drawdown": 1.6460016109351812,
+      "volatility": 0.5161636705400652,
+      "win_rate": 0.5211148648648649,
+      "total_trades": 14,
+      "buy_trades": 14,
+      "sell_trades": 0,
+      "final_balance": 0.17643828387391275,
+      "final_shares": 219519,
+      "final_net_worth": 734344.3310657092,
+      "total_transaction_costs": 9.989833727988142,
+      "average_reward": 0.01009628014812781
+    }
+  },
+  "GOOGL": {
+    "episode_reward": 0.0,
+    "metrics": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "profitable_trades": 0,
+      "average_trade_return": 0.0,
+      "volatility": 0.0,
+      "calmar_ratio": 0,
+      "sortino_ratio": 0
+    },
+    "info": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "sortino_ratio": 0,
+      "calmar_ratio": 0,
+      "max_drawdown": 0.0,
+      "volatility": 0.0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "buy_trades": 0,
+      "sell_trades": 0,
+      "final_balance": 10000,
+      "final_shares": 0,
+      "final_net_worth": 10000.0,
+      "total_transaction_costs": 0,
+      "average_reward": 0.0
+    }
+  },
+  "TSLA": {
+    "episode_reward": -7.565663727922827,
+    "metrics": {
+      "total_return": 1.0990946235670356,
+      "sharpe_ratio": -0.2233272750979019,
+      "max_drawdown": 1.4529314807683968,
+      "win_rate": 0.44763513513513514,
+      "total_trades": 25,
+      "profitable_trades": 11,
+      "average_trade_return": -0.006389918689123995,
+      "volatility": 20.364276981411518,
+      "calmar_ratio": -3.1301534503143675,
+      "sortino_ratio": -0.18237886330735803
+    },
+    "info": {
+      "total_return": 1.0990946235670356,
+      "sharpe_ratio": -0.2233272750979019,
+      "sortino_ratio": -0.18237886330735803,
+      "calmar_ratio": -3.1301534503143675,
+      "max_drawdown": 1.4529314807683968,
+      "volatility": 20.364276981411518,
+      "win_rate": 0.44763513513513514,
+      "total_trades": 25,
+      "buy_trades": 25,
+      "sell_trades": 0,
+      "final_balance": 0.37084402738801203,
+      "final_shares": 18452,
+      "final_net_worth": 20990.946235670355,
+      "total_transaction_costs": 9.989639516456156,
+      "average_reward": -0.006389918689123995
+    }
+  },
+  "AAPL": {
+    "episode_reward": 97.53875952044805,
+    "metrics": {
+      "total_return": -0.7402050298515699,
+      "sharpe_ratio": 0.6523007598346608,
+      "max_drawdown": 1.5706928971307803,
+      "win_rate": 0.07010135135135136,
+      "total_trades": 8,
+      "profitable_trades": 0,
+      "average_trade_return": 0.08238070905443251,
+      "volatility": 149.53034784931313,
+      "calmar_ratio": 62.099191827138405,
+      "sortino_ratio": 2.296915110553477
+    },
+    "info": {
+      "total_return": -0.7402050298515699,
+      "sharpe_ratio": 0.6523007598346608,
+      "sortino_ratio": 2.296915110553477,
+      "calmar_ratio": 62.099191827138405,
+      "max_drawdown": 1.5706928971307803,
+      "volatility": 149.53034784931313,
+      "win_rate": 0.07010135135135136,
+      "total_trades": 8,
+      "buy_trades": 8,
+      "sell_trades": 0,
+      "final_balance": 288.7035033728123,
+      "final_shares": 35084,
+      "final_net_worth": 2597.949701484301,
+      "total_transaction_costs": 9.701594901725464,
+      "average_reward": 0.08238070905443251
+    }
+  }
+}

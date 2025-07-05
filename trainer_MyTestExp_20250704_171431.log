@@ -1,0 +1,66 @@
+2025-07-04 17:14:31,490 - trainer_MyTestExp - INFO - info:66 - 📄 Loading config from experiments/MyTestExp/config.json
+2025-07-04 17:14:31,491 - trainer_MyTestExp - INFO - info:66 - ✅ Custom configuration loaded and merged
+2025-07-04 17:14:31,492 - trainer_MyTestExp - INFO - info:66 - 🔧 Configuration: {
+  "data": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "TSLA"
+    ],
+    "period": "5y",
+    "interval": "1d",
+    "use_sp500": false
+  },
+  "environment": {
+    "initial_balance": 10000,
+    "transaction_cost": 0.001,
+    "max_position_size": 1.0,
+    "lookback_window": 60,
+    "reward_type": "return"
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "eval_freq": 1000,
+    "n_eval_episodes": 5,
+    "save_freq": 10000,
+    "seed": 42
+  }
+}
+2025-07-04 17:14:31,493 - trainer_MyTestExp - INFO - info:66 - 💾 Configuration saved to experiments/MyTestExp/config.json
+2025-07-04 17:14:31,493 - trainer_MyTestExp - INFO - info:66 - 🎯 Trainer initialized for experiment: MyTestExp
+2025-07-04 17:14:31,494 - trainer_MyTestExp - INFO - info:66 - 📁 Experiment directory: experiments/MyTestExp
+2025-07-04 17:14:32,014 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Environment Creation...
+2025-07-04 17:14:32,014 - trainer_MyTestExp - INFO - info:66 - 🏪 Environment configuration:
+2025-07-04 17:14:32,015 - trainer_MyTestExp - INFO - info:66 -   initial_balance: 10000
+2025-07-04 17:14:32,016 - trainer_MyTestExp - INFO - info:66 -   transaction_cost: 0.001
+2025-07-04 17:14:32,016 - trainer_MyTestExp - INFO - info:66 -   max_position_size: 1.0
+2025-07-04 17:14:32,017 - trainer_MyTestExp - INFO - info:66 -   lookback_window: 60
+2025-07-04 17:14:32,018 - trainer_MyTestExp - INFO - info:66 -   reward_type: return
+2025-07-04 17:14:32,019 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)
+2025-07-04 17:14:32,021 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████░░░░░░░░░░░░░░░░░░| 40.0% (2/5)
+2025-07-04 17:14:32,024 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████░░░░░░░░░░░░| 60.0% (3/5)
+2025-07-04 17:14:32,026 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████████████████░░░░░░| 80.0% (4/5)
+2025-07-04 17:14:32,028 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████████████████| 100.0% (5/5)
+2025-07-04 17:14:32,031 - trainer_MyTestExp - INFO - info:66 - ✅ Created environments for 5 stocks
+2025-07-04 17:14:32,031 - trainer_MyTestExp - INFO - info:66 - ⏱️  Environment Creation completed in 0:00:00.017629
+2025-07-04 17:14:32,032 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Evaluation...
+2025-07-04 17:14:32,033 - trainer_MyTestExp - INFO - info:66 - Loading model from experiments/MyTestExp/models/final_model.zip
+2025-07-04 17:14:32,096 - trainer_MyTestExp - INFO - info:66 - Evaluating AMZN: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)
+2025-07-04 17:14:35,123 - trainer_MyTestExp - INFO - info:66 - 📊 AMZN - Return: 162.87%, Sharpe: 0.74
+2025-07-04 17:14:35,133 - trainer_MyTestExp - INFO - info:66 - Evaluating MSFT: |████████████░░░░░░░░░░░░░░░░░░| 40.0% (2/5)
+2025-07-04 17:14:37,921 - trainer_MyTestExp - INFO - info:66 - 📊 MSFT - Return: 7243.44%, Sharpe: 0.56
+2025-07-04 17:14:37,922 - trainer_MyTestExp - INFO - info:66 - Evaluating GOOGL: |██████████████████░░░░░░░░░░░░| 60.0% (3/5)
+2025-07-04 17:14:40,578 - trainer_MyTestExp - INFO - info:66 - 📊 GOOGL - Return: 0.00%, Sharpe: 0.00
+2025-07-04 17:14:40,579 - trainer_MyTestExp - INFO - info:66 - Evaluating TSLA: |████████████████████████░░░░░░| 80.0% (4/5)
+2025-07-04 17:14:43,339 - trainer_MyTestExp - INFO - info:66 - 📊 TSLA - Return: 109.91%, Sharpe: -0.22
+2025-07-04 17:14:43,340 - trainer_MyTestExp - INFO - info:66 - Evaluating AAPL: |██████████████████████████████| 100.0% (5/5)
+2025-07-04 17:14:46,100 - trainer_MyTestExp - INFO - info:66 - 📊 AAPL - Return: -74.02%, Sharpe: 0.65
+2025-07-04 17:14:46,102 - trainer_MyTestExp - INFO - info:66 - 💾 Evaluation results saved to experiments/MyTestExp/models/evaluation_results.json
+2025-07-04 17:14:46,103 - trainer_MyTestExp - INFO - info:66 - ⏱️  Model Evaluation completed in 0:00:14.070563

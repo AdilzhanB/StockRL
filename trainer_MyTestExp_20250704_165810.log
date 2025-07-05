@@ -1,0 +1,40 @@
+2025-07-04 16:58:10,952 - trainer_MyTestExp - INFO - info:66 - 📄 Using default configuration
+2025-07-04 16:58:10,953 - trainer_MyTestExp - INFO - info:66 - 🔧 Configuration: {
+  "data": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "TSLA"
+    ],
+    "period": "5y",
+    "interval": "1d",
+    "use_sp500": false
+  },
+  "environment": {
+    "initial_balance": 10000,
+    "transaction_cost": 0.001,
+    "max_position_size": 1.0,
+    "lookback_window": 60,
+    "reward_type": "return"
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "eval_freq": 1000,
+    "n_eval_episodes": 5,
+    "save_freq": 10000,
+    "seed": 42
+  }
+}
+2025-07-04 16:58:10,954 - trainer_MyTestExp - INFO - info:66 - 💾 Configuration saved to experiments/MyTestExp/config.json
+2025-07-04 16:58:10,955 - trainer_MyTestExp - INFO - info:66 - 🎯 Trainer initialized for experiment: MyTestExp
+2025-07-04 16:58:10,955 - trainer_MyTestExp - INFO - info:66 - 📁 Experiment directory: experiments/MyTestExp
+2025-07-04 16:58:10,956 - trainer_MyTestExp - INFO - info:66 - 🚀 Starting complete training pipeline
+2025-07-04 16:58:10,957 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Evaluation...
+2025-07-04 16:58:10,957 - trainer_MyTestExp - ERROR - error:78 - Training pipeline failed: 'NoneType' object has no attribute 'keys'

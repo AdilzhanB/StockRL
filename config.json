@@ -1,0 +1,33 @@
+{
+  "data": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "TSLA"
+    ],
+    "period": "5y",
+    "interval": "1d",
+    "use_sp500": false
+  },
+  "environment": {
+    "initial_balance": 10000,
+    "transaction_cost": 0.001,
+    "max_position_size": 1.0,
+    "lookback_window": 60,
+    "reward_type": "return"
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "eval_freq": 1000,
+    "n_eval_episodes": 5,
+    "save_freq": 10000,
+    "seed": 42
+  }
+}

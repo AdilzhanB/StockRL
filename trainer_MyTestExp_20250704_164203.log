@@ -1,0 +1,103 @@
+2025-07-04 16:42:03,629 - trainer_MyTestExp - INFO - info:66 - 📄 Using default configuration
+2025-07-04 16:42:03,630 - trainer_MyTestExp - INFO - info:66 - 🔧 Configuration: {
+  "data": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "TSLA"
+    ],
+    "period": "5y",
+    "interval": "1d",
+    "use_sp500": false
+  },
+  "environment": {
+    "initial_balance": 10000,
+    "transaction_cost": 0.001,
+    "max_position_size": 1.0,
+    "lookback_window": 60,
+    "reward_type": "return"
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "eval_freq": 1000,
+    "n_eval_episodes": 5,
+    "save_freq": 10000,
+    "seed": 42
+  }
+}
+2025-07-04 16:42:03,631 - trainer_MyTestExp - INFO - info:66 - 💾 Configuration saved to experiments/MyTestExp/config.json
+2025-07-04 16:42:03,632 - trainer_MyTestExp - INFO - info:66 - 🎯 Trainer initialized for experiment: MyTestExp
+2025-07-04 16:42:03,633 - trainer_MyTestExp - INFO - info:66 - 📁 Experiment directory: experiments/MyTestExp
+2025-07-04 16:42:03,633 - trainer_MyTestExp - INFO - info:66 - 🚀 Starting complete training pipeline
+2025-07-04 16:42:03,634 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Data Preparation...
+2025-07-04 16:42:03,636 - trainer_MyTestExp - INFO - info:66 - 📦 Loading existing processed data...
+2025-07-04 16:42:04,036 - trainer_MyTestExp - INFO - info:66 - ✅ Loaded processed data for 5 stocks
+2025-07-04 16:42:04,038 - trainer_MyTestExp - INFO - info:66 - === DATA INFORMATION ===
+2025-07-04 16:42:04,039 - trainer_MyTestExp - INFO - info:66 - num_stocks: 5
+2025-07-04 16:42:04,039 - trainer_MyTestExp - INFO - info:66 - stocks: ['AMZN', 'MSFT', 'GOOGL', 'TSLA', 'AAPL']
+2025-07-04 16:42:04,040 - trainer_MyTestExp - INFO - info:66 - total_data_points: 5887
+2025-07-04 16:42:04,041 - trainer_MyTestExp - INFO - info:66 - feature_dimensions:
+2025-07-04 16:42:04,042 - trainer_MyTestExp - INFO - info:66 -   AMZN: {'sequences': 1147, 'timesteps': 60, 'features': 50}
+2025-07-04 16:42:04,042 - trainer_MyTestExp - INFO - info:66 -   MSFT: {'sequences': 1185, 'timesteps': 60, 'features': 50}
+2025-07-04 16:42:04,044 - trainer_MyTestExp - INFO - info:66 -   GOOGL: {'sequences': 1185, 'timesteps': 60, 'features': 50}
+2025-07-04 16:42:04,044 - trainer_MyTestExp - INFO - info:66 -   TSLA: {'sequences': 1185, 'timesteps': 60, 'features': 50}
+2025-07-04 16:42:04,045 - trainer_MyTestExp - INFO - info:66 -   AAPL: {'sequences': 1185, 'timesteps': 60, 'features': 50}
+2025-07-04 16:42:04,046 - trainer_MyTestExp - INFO - info:66 - date_ranges:
+2025-07-04 16:42:04,046 - trainer_MyTestExp - INFO - info:66 -   AMZN: {'start': '2020-12-08 00:00:00-05:00', 'end': '2025-07-03 00:00:00-04:00', 'total_days': 1147}
+2025-07-04 16:42:04,047 - trainer_MyTestExp - INFO - info:66 -   MSFT: {'start': '2020-10-14 00:00:00-04:00', 'end': '2025-07-03 00:00:00-04:00', 'total_days': 1185}
+2025-07-04 16:42:04,049 - trainer_MyTestExp - INFO - info:66 -   GOOGL: {'start': '2020-10-14 00:00:00-04:00', 'end': '2025-07-03 00:00:00-04:00', 'total_days': 1185}
+2025-07-04 16:42:04,049 - trainer_MyTestExp - INFO - info:66 -   TSLA: {'start': '2020-10-14 00:00:00-04:00', 'end': '2025-07-03 00:00:00-04:00', 'total_days': 1185}
+2025-07-04 16:42:04,050 - trainer_MyTestExp - INFO - info:66 -   AAPL: {'start': '2020-10-14 00:00:00-04:00', 'end': '2025-07-03 00:00:00-04:00', 'total_days': 1185}
+2025-07-04 16:42:04,051 - trainer_MyTestExp - INFO - info:66 - data_statistics:
+2025-07-04 16:42:04,052 - trainer_MyTestExp - INFO - info:66 -   AMZN: {'mean_reward': 0.0005594119760782921, 'std_reward': 0.022296406035272005, 'min_reward': -0.140494377749234, 'max_reward': 0.13535901735711864}
+2025-07-04 16:42:04,052 - trainer_MyTestExp - INFO - info:66 -   MSFT: {'mean_reward': 0.0008731624810708478, 'std_reward': 0.016632783789797784, 'min_reward': -0.0771562052939444, 'max_reward': 0.10133680183689964}
+2025-07-04 16:42:04,053 - trainer_MyTestExp - INFO - info:66 -   GOOGL: {'mean_reward': 0.0009044145449009408, 'std_reward': 0.019663019787478423, 'min_reward': -0.0950939635085033, 'max_reward': 0.1022436334871546}
+2025-07-04 16:42:04,054 - trainer_MyTestExp - INFO - info:66 -   TSLA: {'mean_reward': 0.0013615600221650649, 'std_reward': 0.03903042109805533, 'min_reward': -0.1542620682219512, 'max_reward': 0.22689989839624536}
+2025-07-04 16:42:04,055 - trainer_MyTestExp - INFO - info:66 -   AAPL: {'mean_reward': 0.0006670026996126003, 'std_reward': 0.018039907632620762, 'min_reward': -0.09245607865732186, 'max_reward': 0.15328847287251235}
+2025-07-04 16:42:04,056 - trainer_MyTestExp - INFO - info:66 - ⏱️  Data Preparation completed in 0:00:00.421859
+2025-07-04 16:42:04,057 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Environment Creation...
+2025-07-04 16:42:04,057 - trainer_MyTestExp - INFO - info:66 - 🏪 Environment configuration:
+2025-07-04 16:42:04,058 - trainer_MyTestExp - INFO - info:66 -   initial_balance: 10000
+2025-07-04 16:42:04,059 - trainer_MyTestExp - INFO - info:66 -   transaction_cost: 0.001
+2025-07-04 16:42:04,060 - trainer_MyTestExp - INFO - info:66 -   max_position_size: 1.0
+2025-07-04 16:42:04,060 - trainer_MyTestExp - INFO - info:66 -   lookback_window: 60
+2025-07-04 16:42:04,061 - trainer_MyTestExp - INFO - info:66 -   reward_type: return
+2025-07-04 16:42:04,062 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)
+2025-07-04 16:42:04,065 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████░░░░░░░░░░░░░░░░░░| 40.0% (2/5)
+2025-07-04 16:42:04,068 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████░░░░░░░░░░░░| 60.0% (3/5)
+2025-07-04 16:42:04,070 - trainer_MyTestExp - INFO - info:66 - Creating environments: |████████████████████████░░░░░░| 80.0% (4/5)
+2025-07-04 16:42:04,072 - trainer_MyTestExp - INFO - info:66 - Creating environments: |██████████████████████████████| 100.0% (5/5)
+2025-07-04 16:42:04,075 - trainer_MyTestExp - INFO - info:66 - ✅ Created environments for 5 stocks
+2025-07-04 16:42:04,075 - trainer_MyTestExp - INFO - info:66 - ⏱️  Environment Creation completed in 0:00:00.018392
+2025-07-04 16:42:04,076 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Creation...
+2025-07-04 16:42:04,084 - trainer_MyTestExp - INFO - info:66 - 🎲 Random seed set to: 42
+2025-07-04 16:42:07,604 - trainer_MyTestExp - INFO - info:66 - === MODEL INFORMATION ===
+2025-07-04 16:42:07,605 - trainer_MyTestExp - INFO - info:66 - algorithm: PPO
+2025-07-04 16:42:07,606 - trainer_MyTestExp - INFO - info:66 - policy: MlpPolicy
+2025-07-04 16:42:07,606 - trainer_MyTestExp - INFO - info:66 - observation_space: Box(-inf, inf, (3008,), float32)
+2025-07-04 16:42:07,607 - trainer_MyTestExp - INFO - info:66 - action_space: Box(0.0, [2. 1.], (2,), float32)
+2025-07-04 16:42:07,608 - trainer_MyTestExp - INFO - info:66 - total_parameters: 393669
+2025-07-04 16:42:07,609 - trainer_MyTestExp - INFO - info:66 - trainable_parameters: 393669
+2025-07-04 16:42:07,609 - trainer_MyTestExp - INFO - info:66 - model_parameters: {'learning_rate': 0.0003, 'gamma': 0.99, 'verbose': 0, 'seed': 42, 'tensorboard_log': 'experiments/MyTestExp/logs/tensorboard', 'batch_size': 64, 'n_epochs': 10, 'clip_range': 0.2, 'ent_coef': 0.0}
+2025-07-04 16:42:07,610 - trainer_MyTestExp - INFO - info:66 - device: cuda
+2025-07-04 16:42:07,612 - trainer_MyTestExp - INFO - info:66 - ✅ PPO model created with 393,669 parameters
+2025-07-04 16:42:07,612 - trainer_MyTestExp - INFO - info:66 - ⏱️  Model Creation completed in 0:00:03.536618
+2025-07-04 16:42:07,613 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Training...
+2025-07-04 16:42:07,614 - trainer_MyTestExp - INFO - info:66 - 🚀 Starting training with parameters:
+2025-07-04 16:42:07,615 - trainer_MyTestExp - INFO - info:66 -   Total timesteps: 500,000
+2025-07-04 16:42:07,616 - trainer_MyTestExp - INFO - info:66 -   Learning rate: 0.0003
+2025-07-04 16:42:07,616 - trainer_MyTestExp - INFO - info:66 -   Evaluation frequency: 1000
+2025-07-04 16:42:07,617 - trainer_MyTestExp - INFO - info:66 -   Save frequency: 10000
+2025-07-04 16:53:55,946 - trainer_MyTestExp - INFO - info:66 - ✅ Training completed successfully!
+2025-07-04 16:53:55,969 - trainer_MyTestExp - INFO - info:66 - 💾 Final model saved to experiments/MyTestExp/models/final_model
+2025-07-04 16:53:55,970 - trainer_MyTestExp - INFO - info:66 - ⏱️  Model Training completed in 0:11:48.356779
+2025-07-04 16:53:55,970 - trainer_MyTestExp - INFO - info:66 - ⏱️  Starting Model Evaluation...
+2025-07-04 16:53:55,971 - trainer_MyTestExp - INFO - info:66 - Evaluating AMZN: |██████░░░░░░░░░░░░░░░░░░░░░░░░| 20.0% (1/5)
+2025-07-04 16:53:55,974 - trainer_MyTestExp - ERROR - error:78 - Training pipeline failed: Error: Unexpected observation shape () for Box environment, please use (3008,) or (n_env, 3008) for the observation shape.
